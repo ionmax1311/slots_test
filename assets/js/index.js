@@ -34,25 +34,24 @@ const selectAll = (selector, scope = document) => {
 };
 
 // REVEALING ON SCROLL
-// const the_animation = selectAll(".reveal");
+const the_animation = selectAll(".reveal");
 
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("active");
-//       }
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
 
-//     });
-//   },
-//   { threshold: 0.3 }
-// );
+for (let i = 0; i < the_animation.length; i++) {
+  const elements = the_animation[i];
 
-// for (let i = 0; i < the_animation.length; i++) {
-//   const elements = the_animation[i];
-
-//   observer.observe(elements);
-// }
+  observer.observe(elements);
+}
 
 // SCROLL TOP
 

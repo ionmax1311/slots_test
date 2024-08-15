@@ -325,7 +325,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 15px;
 }
 .offers-payment img {
-  height: max-content;
+  height: 27px;
 }
 .offers-bonus span {
   margin-top: 15px;
@@ -761,11 +761,17 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 22px;
     line-height: 30px;
   }
+  .hero-text {
+    padding-bottom: 0;
+  }
+  .mouse {
+    display: none;
+  }
 }
 @media (max-width: 385px) {
-  .hero-text {
+  /* .hero-text {
     padding-bottom: 110px;
-  }
+  } */
   .hero-text h1 {
     font-size: 45px;
     line-height: 50px;
